@@ -34,44 +34,49 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("hello?")
-        let jsonUrlString = "https://jsonplaceholder.typicode.com/todos"
-        guard let url = URL(string: jsonUrlString) else
-        {return}
         
-        URLSession.shared.dataTask(with: url) { (data, response, err) in
-            //check err
-            //also checck response status
-            
-            guard let data = data else {return}
-            
-            //let dataAsString = String(data: data, encoding: .utf8)
-            //print(dataAsString)
-            
-            print("hello")
-            do{
+        guard let url = Bundle.main.url(forResource: "test", withExtension: "json") else{return}
+            do {
+                let data = try Data(contentsOf: url)
+                
                 let jsonResponse = try JSONSerialization.jsonObject(with: data, options: .mutableContainers)
-//                    else {
-//                        print("what")
-//                        return
-//
-//                    }
-                guard let json = jsonResponse as? [[String:Any]] else{
+                guard let json = jsonResponse as? [String:[String:[[String:Any]]]] else{
                     print("rip")
                     return
                 }
-                print(json)
-                let user = User(index: 0, jsonInit: json)
-                print(user.title)
-            } catch let jsonErr{
-                print("error serializing json", jsonErr)
+                //print(json)
+                
+                //let user = User(index: 0, jsonInit: json)
+                //print(user.title)
+                
+                
+                guard let dayDict = json["October"]!["2"] else{
+                    print("bad")
+                    return
+                }
+                for dict in dayDict{
+                    print(dict["Location"]!)
+                }
+                //print(json["October"]!["2"])
+            } catch {
+                print("error:\(error)")
             }
-        }.resume()
+       
         
         
         //let myUser = User(userId: 1, id: 1, title: "Person", completed: true)
         //print(myUser)
         // Do any additional setup after loading the view.
     }
+    /*
+    func greet(person: String, alreadyGreeted: Bool) -> String {
+        if alreadyGreeted {
+            return greetAgain(person: person)
+        } else {
+            return greet(person: person)
+        }
+    }*/
+
 
 
 }
