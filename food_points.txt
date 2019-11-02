@@ -12,7 +12,7 @@ Post Date Location Amount End Balance
 10/4/2019 9:48 AM Bella Union BELReg1 (2.22) USD 1,583.25 USD
 10/4/2019 2:24 PM Devils Krafthouse KRAReg3 (13.06) USD 1,570.19 USD
 10/4/2019 7:25 PM Lobby Shop 7200 - Reg - 28 (4.48) USD 1,565.71 USD
-10/4/2019 9:00 PM Pitchfork Provisions PITReg1(11.29) USD 1,554.42 USD
+10/4/2019 9:00 PM Pitchfork Provisions PITReg1 (11.29) USD 1,554.42 USD
 10/5/2019 8:58 PM Vending - Snack VS - WEL D Laundry (1.60) USD 1,552.82 USD
 10/6/2019 12:22 PM The Cafe CAFReg2 (8.92) USD 1,543.90 USD
 10/6/2019 7:07 PM Sazon SAZReg1 (11.77) USD 1,532.13 USD
