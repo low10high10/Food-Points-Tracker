@@ -10,7 +10,7 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--window-size=1920x1080")
 
-driver = webdriver.Chrome("/Users/anshul/Desktop/chromedriver", options=chrome_options)
+driver = webdriver.Chrome(options=chrome_options)
 lst = []
 driver.get('https://duke-sp.blackboard.com/eaccounts/AccountTransaction.aspx')
 time.sleep(1)
