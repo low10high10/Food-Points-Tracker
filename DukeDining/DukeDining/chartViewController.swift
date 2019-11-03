@@ -28,6 +28,7 @@ class chartViewController: UIViewController {
            pieChart.rotationEnabled = false
            pieChart.drawHoleEnabled = false
            pieChart.drawEntryLabelsEnabled = false
+           pieChart.usePercentValuesEnabled = true
            
            let file = dataRefiner()
            dictionary = file.getDict()!
@@ -38,11 +39,10 @@ class chartViewController: UIViewController {
                        dayData = month[day]!
                        for transaction in dayData {
                            if(places[transaction["Location"] as? String ?? ""] == nil){
-                               places[transaction["Location"] as? String ?? ""] = Double(transaction["Cost"] as? String ?? "")
+                               places[transaction["Location"] as? String ?? ""] = Double(transaction["Used"] as? String ?? "")
                            } else {
-                               places[transaction["Location"] as? String ?? ""] = places[transaction["Location"] as? String ?? ""]! + Double(transaction["Cost"] as? String ?? "")!
+                               places[transaction["Location"] as? String ?? ""] = places[transaction["Location"] as? String ?? ""]! + Double(transaction["Used"] as? String ?? "")!
                            }
-                           
                        }
                    }
             }
