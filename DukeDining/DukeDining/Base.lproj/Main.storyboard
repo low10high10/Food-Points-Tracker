@@ -42,7 +42,7 @@
         <!--Item 1-->
         <scene sceneID="xdn-8x-UOe">
             <objects>
-                <viewController id="ReD-Kr-8Mj" sceneMemberID="viewController">
+                <viewController id="ReD-Kr-8Mj" customClass="DailyDevilDealsViewController" customModule="DukeDining" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BT3-Ca-Xgm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,6 +69,9 @@
                                 <rect key="frame" x="82" y="533" width="251" height="85"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Daily Devil Deals"/>
+                                <connections>
+                                    <action selector="BrowserButton:" destination="ReD-Kr-8Mj" eventType="touchUpInside" id="Cgd-j7-hbp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

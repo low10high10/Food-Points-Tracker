@@ -14,6 +14,7 @@
 		BE59330D236DECEC00F7FD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE59330C236DECEC00F7FD0F /* Assets.xcassets */; };
 		BE593310236DECEC00F7FD0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE59330E236DECEC00F7FD0F /* LaunchScreen.storyboard */; };
 		BEBA56F9236E362200C237A9 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = BEBA56F8236E362200C237A9 /* test.json */; };
+		BEBA78B1236E607100459D83 /* DailyDevilDealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBA78B0236E607100459D83 /* DailyDevilDealsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE59330F236DECEC00F7FD0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE593311236DECEC00F7FD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEBA56F8236E362200C237A9 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test.json; path = ../../test.json; sourceTree = "<group>"; };
+		BEBA78B0236E607100459D83 /* DailyDevilDealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDevilDealsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				BE593303236DECEA00F7FD0F /* AppDelegate.swift */,
 				BE593305236DECEA00F7FD0F /* SceneDelegate.swift */,
 				BE593307236DECEA00F7FD0F /* ViewController.swift */,
+				BEBA78B0236E607100459D83 /* DailyDevilDealsViewController.swift */,
 				BE593309236DECEA00F7FD0F /* Main.storyboard */,
 				BE59330C236DECEC00F7FD0F /* Assets.xcassets */,
 				BEBA56F8236E362200C237A9 /* test.json */,
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE593308236DECEA00F7FD0F /* ViewController.swift in Sources */,
+				BEBA78B1236E607100459D83 /* DailyDevilDealsViewController.swift in Sources */,
 				BE593304236DECEA00F7FD0F /* AppDelegate.swift in Sources */,
 				BE593306236DECEA00F7FD0F /* SceneDelegate.swift in Sources */,
 			);
