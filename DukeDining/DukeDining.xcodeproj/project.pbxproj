@@ -14,6 +14,7 @@
 		BE59330B236DECEA00F7FD0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE593309236DECEA00F7FD0F /* Main.storyboard */; };
 		BE59330D236DECEC00F7FD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE59330C236DECEC00F7FD0F /* Assets.xcassets */; };
 		BE593310236DECEC00F7FD0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE59330E236DECEC00F7FD0F /* LaunchScreen.storyboard */; };
+		BEAF09A5236E7828008C15C8 /* DailyDealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF09A4236E7828008C15C8 /* DailyDealViewController.swift */; };
 		BEBA56F9236E362200C237A9 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = BEBA56F8236E362200C237A9 /* test.json */; };
 		D86F8C48236E6C8E00B6282C /* dataRefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86F8C47236E6C8E00B6282C /* dataRefiner.swift */; };
 		D86F8C77236E731200B6282C /* final.json in Resources */ = {isa = PBXBuildFile; fileRef = D86F8C76236E731200B6282C /* final.json */; };
@@ -61,6 +62,7 @@
 		BE59330C236DECEC00F7FD0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE59330F236DECEC00F7FD0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE593311236DECEC00F7FD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEAF09A4236E7828008C15C8 /* DailyDealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyDealViewController.swift; sourceTree = "<group>"; };
 		BEBA56F8236E362200C237A9 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test.json; path = ../../test.json; sourceTree = "<group>"; };
 		C0993B78DC6C64E7A6CCFAE8 /* Pods-DukeDining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DukeDining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining.debug.xcconfig"; sourceTree = "<group>"; };
 		D86F8C47236E6C8E00B6282C /* dataRefiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataRefiner.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				BE593305236DECEA00F7FD0F /* SceneDelegate.swift */,
 				BE593307236DECEA00F7FD0F /* ViewController.swift */,
 				BE593309236DECEA00F7FD0F /* Main.storyboard */,
+				BEAF09A4236E7828008C15C8 /* DailyDealViewController.swift */,
 				BE59330C236DECEC00F7FD0F /* Assets.xcassets */,
 				D86F8C76236E731200B6282C /* final.json */,
 				BEBA56F8236E362200C237A9 /* test.json */,
@@ -262,21 +265,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
-				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
-				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -290,6 +288,7 @@
 				D8B8FE05236E699C00BD16FA /* chartViewController.swift in Sources */,
 				D86F8C48236E6C8E00B6282C /* dataRefiner.swift in Sources */,
 				BE593304236DECEA00F7FD0F /* AppDelegate.swift in Sources */,
+				BEAF09A5236E7828008C15C8 /* DailyDealViewController.swift in Sources */,
 				BE593306236DECEA00F7FD0F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
