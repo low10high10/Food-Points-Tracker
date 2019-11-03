@@ -1,16 +1,10 @@
-//
-//  chartViewController.swift
-//  DukeDining
-//
-//  Created by Oliver Adolfo Rodas on 11/2/19.
-//  Copyright © 2019 Duke University. All rights reserved.
-//
 
 import UIKit
 import Charts
 
 class chartViewController: UIViewController {
 
+    @IBOutlet weak var FPSpentToday: UILabel!
     @IBOutlet weak var pieChart: PieChartView!
        
        var DataValue = PieChartDataEntry(value: 0)
@@ -20,10 +14,11 @@ class chartViewController: UIViewController {
        var dayData : [[String:Any]] = []
        var places : [String:Double] = [:]
        var numPlaces : Int = 0
-       
+       var track: Double = 0.0
+    
        override func viewDidLoad() {
            super.viewDidLoad()
-           
+            FPSpentToday.text = "Poo poo pee pee"
            pieChart.chartDescription?.text = "Food Point Distribution"
            pieChart.rotationEnabled = false
            pieChart.drawHoleEnabled = false
@@ -48,8 +43,18 @@ class chartViewController: UIViewController {
             }
                let sortedDict = places.sorted(by: { $0.value < $1.value })
                data = []
+            
                for item in sortedDict {
-                   data.append(PieChartDataEntry(value: item.value, label: item.key))
+                  if (numPlaces < places.count-10 ) {
+                      track = track + item.value
+                  }
+                  if (numPlaces==places.count-10) {
+                     track = track + item.value
+                     data.append(PieChartDataEntry(value: track, label: "Others"))
+                  }
+                  if (numPlaces>places.count-10) {
+                     data.append(PieChartDataEntry(value: item.value, label: item.key))
+                  }
                    numPlaces += 1
                }
                
@@ -63,7 +68,7 @@ class chartViewController: UIViewController {
        
        func updateData() {
            let chartDataSet = PieChartDataSet(entries: data, label: nil)
-           chartDataSet.colors = makeColors(count: numPlaces)
+           chartDataSet.colors = makeColors(count: 10)
            chartDataSet.valueTextColor = NSUIColor.black
            pieChart.data = PieChartData(dataSet: chartDataSet)
        }
