@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7ECFDE53BE3809DC9C941991 /* Pods_DukeDining.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5C50EEEE45527DB461ACDA5 /* Pods_DukeDining.framework */; };
 		BE593304236DECEA00F7FD0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE593303236DECEA00F7FD0F /* AppDelegate.swift */; };
 		BE593306236DECEA00F7FD0F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE593305236DECEA00F7FD0F /* SceneDelegate.swift */; };
 		BE593308236DECEA00F7FD0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE593307236DECEA00F7FD0F /* ViewController.swift */; };
@@ -14,9 +15,44 @@
 		BE59330D236DECEC00F7FD0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE59330C236DECEC00F7FD0F /* Assets.xcassets */; };
 		BE593310236DECEC00F7FD0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE59330E236DECEC00F7FD0F /* LaunchScreen.storyboard */; };
 		BEBA56F9236E362200C237A9 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = BEBA56F8236E362200C237A9 /* test.json */; };
+		D86F8C48236E6C8E00B6282C /* dataRefiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86F8C47236E6C8E00B6282C /* dataRefiner.swift */; };
+		D86F8C77236E731200B6282C /* final.json in Resources */ = {isa = PBXBuildFile; fileRef = D86F8C76236E731200B6282C /* final.json */; };
+		D8B8FE05236E699C00BD16FA /* chartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B8FE04236E699C00BD16FA /* chartViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D86F8C72236E6D7F00B6282C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		D86F8C74236E6D7F00B6282C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8B8FE09236E6A1300BD16FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0F37606044D23146BFA5454D /* Pods-DukeDining.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DukeDining.release.xcconfig"; path = "Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining.release.xcconfig"; sourceTree = "<group>"; };
+		A5C50EEEE45527DB461ACDA5 /* Pods_DukeDining.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DukeDining.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE593300236DECEA00F7FD0F /* DukeDining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DukeDining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE593303236DECEA00F7FD0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE593305236DECEA00F7FD0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +62,11 @@
 		BE59330F236DECEC00F7FD0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE593311236DECEC00F7FD0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEBA56F8236E362200C237A9 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test.json; path = ../../test.json; sourceTree = "<group>"; };
+		C0993B78DC6C64E7A6CCFAE8 /* Pods-DukeDining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DukeDining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining.debug.xcconfig"; sourceTree = "<group>"; };
+		D86F8C47236E6C8E00B6282C /* dataRefiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataRefiner.swift; sourceTree = "<group>"; };
+		D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		D86F8C76236E731200B6282C /* final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = final.json; path = ../../final.json; sourceTree = "<group>"; };
+		D8B8FE04236E699C00BD16FA /* chartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +74,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7ECFDE53BE3809DC9C941991 /* Pods_DukeDining.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DC068452DAD77D52DE8FC4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5C50EEEE45527DB461ACDA5 /* Pods_DukeDining.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		968A9D6CA6BFA7C6465C6D60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C0993B78DC6C64E7A6CCFAE8 /* Pods-DukeDining.debug.xcconfig */,
+				0F37606044D23146BFA5454D /* Pods-DukeDining.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BE5932F7236DECEA00F7FD0F = {
 			isa = PBXGroup;
 			children = (
 				BE593302236DECEA00F7FD0F /* DukeDining */,
+				D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */,
 				BE593301236DECEA00F7FD0F /* Products */,
+				968A9D6CA6BFA7C6465C6D60 /* Pods */,
+				4DC068452DAD77D52DE8FC4C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,11 +125,23 @@
 				BE593307236DECEA00F7FD0F /* ViewController.swift */,
 				BE593309236DECEA00F7FD0F /* Main.storyboard */,
 				BE59330C236DECEC00F7FD0F /* Assets.xcassets */,
+				D86F8C76236E731200B6282C /* final.json */,
 				BEBA56F8236E362200C237A9 /* test.json */,
 				BE59330E236DECEC00F7FD0F /* LaunchScreen.storyboard */,
+				D8B8FE04236E699C00BD16FA /* chartViewController.swift */,
+				D86F8C47236E6C8E00B6282C /* dataRefiner.swift */,
 				BE593311236DECEC00F7FD0F /* Info.plist */,
 			);
 			path = DukeDining;
+			sourceTree = "<group>";
+		};
+		D86F8C6E236E6D7F00B6282C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D86F8C73236E6D7F00B6282C /* Charts.framework */,
+				D86F8C75236E6D7F00B6282C /* ChartsTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE593314236DECEC00F7FD0F /* Build configuration list for PBXNativeTarget "DukeDining" */;
 			buildPhases = (
+				94B112CDFF2CB1BB0B10CC1D /* [CP] Check Pods Manifest.lock */,
 				BE5932FC236DECEA00F7FD0F /* Sources */,
 				BE5932FD236DECEA00F7FD0F /* Frameworks */,
 				BE5932FE236DECEA00F7FD0F /* Resources */,
+				D0EA210F1099570A672E0C76 /* [CP] Embed Pods Frameworks */,
+				D8B8FE09236E6A1300BD16FA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -116,12 +193,35 @@
 			mainGroup = BE5932F7236DECEA00F7FD0F;
 			productRefGroup = BE593301236DECEA00F7FD0F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D86F8C6E236E6D7F00B6282C /* Products */;
+					ProjectRef = D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				BE5932FF236DECEA00F7FD0F /* DukeDining */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D86F8C73236E6D7F00B6282C /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = D86F8C72236E6D7F00B6282C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D86F8C75236E6D7F00B6282C /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = D86F8C74236E6D7F00B6282C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BE5932FE236DECEA00F7FD0F /* Resources */ = {
@@ -130,6 +230,7 @@
 			files = (
 				BE593310236DECEC00F7FD0F /* LaunchScreen.storyboard in Resources */,
 				BEBA56F9236E362200C237A9 /* test.json in Resources */,
+				D86F8C77236E731200B6282C /* final.json in Resources */,
 				BE59330D236DECEC00F7FD0F /* Assets.xcassets in Resources */,
 				BE59330B236DECEA00F7FD0F /* Main.storyboard in Resources */,
 			);
@@ -137,12 +238,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		94B112CDFF2CB1BB0B10CC1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DukeDining-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0EA210F1099570A672E0C76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE5932FC236DECEA00F7FD0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BE593308236DECEA00F7FD0F /* ViewController.swift in Sources */,
+				D8B8FE05236E699C00BD16FA /* chartViewController.swift in Sources */,
+				D86F8C48236E6C8E00B6282C /* dataRefiner.swift in Sources */,
 				BE593304236DECEA00F7FD0F /* AppDelegate.swift in Sources */,
 				BE593306236DECEA00F7FD0F /* SceneDelegate.swift in Sources */,
 			);
@@ -286,11 +432,13 @@
 		};
 		BE593315236DECEC00F7FD0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0993B78DC6C64E7A6CCFAE8 /* Pods-DukeDining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4MH4WTFKH;
 				INFOPLIST_FILE = DukeDining/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +452,13 @@
 		};
 		BE593316236DECEC00F7FD0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F37606044D23146BFA5454D /* Pods-DukeDining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4MH4WTFKH;
 				INFOPLIST_FILE = DukeDining/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
