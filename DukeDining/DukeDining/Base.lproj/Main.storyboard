@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WOr-lZ-ryi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DukeDining" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="xJe-1D-qDB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2633" y="50"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="2V6-hM-Ng8">
+            <objects>
+                <viewController id="Jyp-qh-kYr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wHG-o8-EcK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cVz-os-xA6"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="OGH-5H-hsg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21A-Wj-8no" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1207" y="50"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="xdn-8x-UOe">
+            <objects>
+                <viewController id="ReD-Kr-8Mj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BT3-Ca-Xgm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Running Low on Food Points?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="M3z-h7-rVd">
+                                <rect key="frame" x="0.0" y="64" width="414" height="99"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="40"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="x9a-RA-chC">
+                                <rect key="frame" x="0.0" y="191" width="414" height="214"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="9xi-M5-Ke9"/>
+                                </constraints>
+                                <string key="text">Daily Devil Deals ensures that every vendor on Duke's campus offers a lunch option for $5 or less, and seeks to address the inaccessibility and cost of West Campus dining for first-year and low socioeconomic students. </string>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Book" family="Bodoni 72" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="741-Lp-M6j">
+                                <rect key="frame" x="82" y="533" width="251" height="85"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Daily Devil Deals"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="741-Lp-M6j" firstAttribute="centerX" secondItem="gax-DC-Dxt" secondAttribute="centerX" id="8QG-2q-3oV"/>
+                            <constraint firstItem="gax-DC-Dxt" firstAttribute="bottom" secondItem="741-Lp-M6j" secondAttribute="bottom" constant="195" id="POg-z3-Kut"/>
+                            <constraint firstItem="gax-DC-Dxt" firstAttribute="bottom" secondItem="M3z-h7-rVd" secondAttribute="bottom" constant="650" id="TcZ-4z-iff"/>
+                            <constraint firstItem="x9a-RA-chC" firstAttribute="leading" secondItem="gax-DC-Dxt" secondAttribute="leading" id="Y40-ga-AaV"/>
+                            <constraint firstItem="gax-DC-Dxt" firstAttribute="trailing" secondItem="x9a-RA-chC" secondAttribute="trailing" id="aeJ-rQ-oGa"/>
+                            <constraint firstItem="M3z-h7-rVd" firstAttribute="centerX" secondItem="gax-DC-Dxt" secondAttribute="centerX" id="cOM-8P-ZyN"/>
+                            <constraint firstItem="x9a-RA-chC" firstAttribute="top" secondItem="M3z-h7-rVd" secondAttribute="bottom" constant="28" id="jhJ-O1-jzp"/>
+                            <constraint firstItem="M3z-h7-rVd" firstAttribute="top" secondItem="gax-DC-Dxt" secondAttribute="top" constant="20" id="kLJ-zX-H3G"/>
+                            <constraint firstItem="gax-DC-Dxt" firstAttribute="trailing" secondItem="741-Lp-M6j" secondAttribute="trailing" constant="81" id="uG0-dd-7eN"/>
+                            <constraint firstItem="M3z-h7-rVd" firstAttribute="leading" secondItem="gax-DC-Dxt" secondAttribute="leading" id="xiY-GJ-SZw"/>
+                            <constraint firstItem="gax-DC-Dxt" firstAttribute="trailing" secondItem="M3z-h7-rVd" secondAttribute="trailing" id="yL3-32-Qd4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gax-DC-Dxt"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="X7p-jR-wL5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29J-aD-dhF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1162.3188405797102" y="-679.01785714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="aZX-UR-9aB">
+            <objects>
+                <tabBarController id="WOr-lZ-ryi" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zd1-xd-mam">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ReD-Kr-8Mj" kind="relationship" relationship="viewControllers" id="U7U-vh-BU8"/>
+                        <segue destination="Jyp-qh-kYr" kind="relationship" relationship="viewControllers" id="IB6-0i-vDK"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ofT-Fl-ZZo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDA-C7-jpd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2387" y="-679"/>
         </scene>
     </scenes>
 </document>
