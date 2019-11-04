@@ -22,16 +22,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D86F8C72236E6D7F00B6282C /* PBXContainerItemProxy */ = {
+		D873B08D236FCDB800C6836C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */;
+			containerPortal = D873B088236FCDB800C6836C /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
 			remoteInfo = Charts;
 		};
-		D86F8C74236E6D7F00B6282C /* PBXContainerItemProxy */ = {
+		D873B08F236FCDB800C6836C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */;
+			containerPortal = D873B088236FCDB800C6836C /* Charts.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
 			remoteInfo = ChartsTests;
@@ -66,8 +66,8 @@
 		BEBA56F8236E362200C237A9 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = test.json; path = ../../test.json; sourceTree = "<group>"; };
 		C0993B78DC6C64E7A6CCFAE8 /* Pods-DukeDining.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DukeDining.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining.debug.xcconfig"; sourceTree = "<group>"; };
 		D86F8C47236E6C8E00B6282C /* dataRefiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataRefiner.swift; sourceTree = "<group>"; };
-		D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		D86F8C76236E731200B6282C /* final.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = final.json; path = ../../final.json; sourceTree = "<group>"; };
+		D873B088236FCDB800C6836C /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../../Downloads/Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		D8B8FE04236E699C00BD16FA /* chartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,8 +103,8 @@
 		BE5932F7236DECEA00F7FD0F = {
 			isa = PBXGroup;
 			children = (
+				D873B088236FCDB800C6836C /* Charts.xcodeproj */,
 				BE593302236DECEA00F7FD0F /* DukeDining */,
-				D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */,
 				BE593301236DECEA00F7FD0F /* Products */,
 				968A9D6CA6BFA7C6465C6D60 /* Pods */,
 				4DC068452DAD77D52DE8FC4C /* Frameworks */,
@@ -138,11 +138,11 @@
 			path = DukeDining;
 			sourceTree = "<group>";
 		};
-		D86F8C6E236E6D7F00B6282C /* Products */ = {
+		D873B089236FCDB800C6836C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D86F8C73236E6D7F00B6282C /* Charts.framework */,
-				D86F8C75236E6D7F00B6282C /* ChartsTests.xctest */,
+				D873B08E236FCDB800C6836C /* Charts.framework */,
+				D873B090236FCDB800C6836C /* ChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,8 +198,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D86F8C6E236E6D7F00B6282C /* Products */;
-					ProjectRef = D86F8C6D236E6D7F00B6282C /* Charts.xcodeproj */;
+					ProductGroup = D873B089236FCDB800C6836C /* Products */;
+					ProjectRef = D873B088236FCDB800C6836C /* Charts.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -210,18 +210,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D86F8C73236E6D7F00B6282C /* Charts.framework */ = {
+		D873B08E236FCDB800C6836C /* Charts.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Charts.framework;
-			remoteRef = D86F8C72236E6D7F00B6282C /* PBXContainerItemProxy */;
+			remoteRef = D873B08D236FCDB800C6836C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		D86F8C75236E6D7F00B6282C /* ChartsTests.xctest */ = {
+		D873B090236FCDB800C6836C /* ChartsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = ChartsTests.xctest;
-			remoteRef = D86F8C74236E6D7F00B6282C /* PBXContainerItemProxy */;
+			remoteRef = D873B08F236FCDB800C6836C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -265,16 +265,21 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+				"${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Macaw.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DukeDining/Pods-DukeDining-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -319,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -379,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -434,15 +441,16 @@
 			baseConfigurationReference = C0993B78DC6C64E7A6CCFAE8 /* Pods-DukeDining.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P4MH4WTFKH;
+				DEVELOPMENT_TEAM = 6633UA367R;
 				INFOPLIST_FILE = DukeDining/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "HackDukeGroup.DukeDining-";
+				PRODUCT_BUNDLE_IDENTIFIER = DukeDining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,15 +462,16 @@
 			baseConfigurationReference = 0F37606044D23146BFA5454D /* Pods-DukeDining.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P4MH4WTFKH;
+				DEVELOPMENT_TEAM = 6633UA367R;
 				INFOPLIST_FILE = DukeDining/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "HackDukeGroup.DukeDining-";
+				PRODUCT_BUNDLE_IDENTIFIER = DukeDining;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -15,10 +15,10 @@ class chartViewController: UIViewController {
        var places : [String:Double] = [:]
        var numPlaces : Int = 0
        var track: Double = 0.0
+    var total: Double = 0.0
     
        override func viewDidLoad() {
            super.viewDidLoad()
-            FPSpentToday.text = "Poo poo pee pee"
            pieChart.chartDescription?.text = "Food Point Distribution"
            pieChart.rotationEnabled = false
            pieChart.drawHoleEnabled = false
@@ -41,34 +41,41 @@ class chartViewController: UIViewController {
                        }
                    }
             }
-               let sortedDict = places.sorted(by: { $0.value < $1.value })
+               let sortedDict = places.sorted(by: { $0.value > $1.value })
                data = []
             
                for item in sortedDict {
-                  if (numPlaces < places.count-10 ) {
-                      track = track + item.value
-                  }
-                  if (numPlaces==places.count-10) {
-                     track = track + item.value
-                     data.append(PieChartDataEntry(value: track, label: "Others"))
-                  }
-                  if (numPlaces>places.count-10) {
-                     data.append(PieChartDataEntry(value: item.value, label: item.key))
-                  }
-                   numPlaces += 1
+                if sortedDict[0].value/item.value > 5 {
+                    track = track + item.value
+                } else {
+                    data.append(PieChartDataEntry(value: item.value, label: item.key))
+                    numPlaces += 1
+                }
+                total += item.value
+//                  if (numPlaces < places.count-10 ) {
+//                      track = track + item.value
+//                  }
+//                  if (numPlaces==places.count-10) {
+//                     track = track + item.value
+//                     data.append(PieChartDataEntry(value: track, label: "Others"))
+//                  }
+//                  if (numPlaces>places.count-10) {
+//                     data.append(PieChartDataEntry(value: item.value, label: item.key))
+//                  }
+//                   numPlaces += 1
                }
-               
-               
-               
+            numPlaces += 1
+            data.append(PieChartDataEntry(value: track, label: "Others"))
+            
+            FPSpentToday.text = String(total)
                pieChart.animate(xAxisDuration: 1)
-               print(data)
                updateData()
            }
        }
        
        func updateData() {
            let chartDataSet = PieChartDataSet(entries: data, label: nil)
-           chartDataSet.colors = makeColors(count: 10)
+        chartDataSet.colors = makeColors(count: data.count)
            chartDataSet.valueTextColor = NSUIColor.black
            pieChart.data = PieChartData(dataSet: chartDataSet)
        }
@@ -80,7 +87,7 @@ class chartViewController: UIViewController {
            var b : Double = 0
            var wavelength : Double = 0
            for i in 0 ..< count {
-               wavelength = Double(i)*300.0/Double(count) + 400.0
+               wavelength = Double(i)*300.0/Double(count - 1) + 400.0
                if ((wavelength >= 400) && (wavelength < 450)) {
                    r = 1.0;
                    g = 0;
@@ -101,11 +108,12 @@ class chartViewController: UIViewController {
                    r = (wavelength - 600.0) / (650.0 - 600.0);
                    g = 1.0;
                    b = 0.0;
-               } else if ((wavelength >= 650) && (wavelength <= 700)) {
+               } else if ((wavelength >= 650) && (wavelength <= 750)) {
                    r = 1.0;
-                   g = 1.0 - (wavelength - 650.0) / (700.0 - 650.0);
+                   g = 1.0 - (wavelength - 650.0) / (750.0 - 650.0);
                    b = 0.0;
                }
+
                colors.append(NSUIColor(red: CGFloat(r), green: CGFloat(g), blue: CGFloat(b), alpha: 1.0))
            }
            return colors
